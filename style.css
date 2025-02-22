@@ -1,0 +1,184 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+.container {
+  position: relative;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 90%;
+}
+.image {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.image img{
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 26%;
+  left: 24%;
+  transform: translate(-16%, -24%);
+  width: 75%;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+  height: 100%;
+  
+}
+.popup h2 {
+  font-size: 16px;text-align: center;
+}
+.top-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+p {
+  font-size: 16px;text-align: center;
+}
+.overlay {
+  display: none;
+  position: fixed;
+}
+.close-btn {
+  font-size: 15px;
+  background-color: rgba(211, 193, 193, 0.6);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-btn img {
+  width: 15px;
+  margin-top: 5px;
+}
+.buy-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.main-box {
+  margin-top: 40px;
+}
+.item {
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 0.8;
+  animation-name: card;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.item img {
+  width: 100px;
+  height: 100px;
+}
+.cloth-img {
+  display: flex;
+  justify-content: center;
+}
+.main-box .brown {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.main-box .denim {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.main-box .formal {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.main-box .pink {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+.main-box .alibaug{
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
+}
+.main-box .birthday{
+  position: absolute;
+  top: 10%;
+  right: 40%;
+}
+.top-heading{font-size: 30px !important;color: #fff;font-weight: 600;}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0.5;
+  }
+}
+@keyframes fadeInUp1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.fadeInUp-animation {
+  animation: fadeInUp1 1.5s;
+}
+
+@keyframes card{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.8;
+    }
+}
