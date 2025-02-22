@@ -29,10 +29,9 @@ body {
   border: 2px solid #ccc;
   border-radius: 10px;
   cursor: pointer;
-  
 }
 
-.image img{
+.image img {
   object-fit: cover;
   display: block;
   width: 100%;
@@ -45,22 +44,23 @@ body {
   left: 24%;
   transform: translate(-16%, -24%);
   width: 75%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   z-index: 1000;
   height: 100%;
-  
 }
 .popup h2 {
-  font-size: 16px;text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 .top-heading {
   text-align: center;
   margin-top: 20px;
 }
 p {
-  font-size: 16px;text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 .overlay {
   display: none;
@@ -139,17 +139,38 @@ p {
   bottom: 10%;
   right: 5%;
 }
-.main-box .alibaug{
+.main-box .alibaug {
   position: absolute;
   bottom: 10%;
   right: 40%;
 }
-.main-box .birthday{
+.main-box .birthday {
   position: absolute;
   top: 10%;
   right: 40%;
 }
-.top-heading{font-size: 30px !important;color: #fff;font-weight: 600;}
+.top-heading {
+  font-size: 30px !important;
+  color: #fff;
+  font-weight: 600;
+}
+
+.magic-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(211, 193, 193, 0.6);
+  cursor: pointer;
+  color: rgb(127, 105, 204);
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.magic-btn:hover {
+  background-color: #cbe58d;
+}
 
 @keyframes fadeInUp {
   0% {
@@ -174,11 +195,11 @@ p {
   animation: fadeInUp1 1.5s;
 }
 
-@keyframes card{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 0.8;
-    }
+@keyframes card {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
 }

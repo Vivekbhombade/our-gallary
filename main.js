@@ -1,4 +1,4 @@
-const image = document.getElementById('bg-image');
+const image = document.getElementById('magic-btn');
 const popup = document.getElementById('popup');
 // const overlay = document.getElementById('overlay');
 const closeBtn = document.getElementById('closeBtn');
@@ -7,13 +7,16 @@ const closeBtn = document.getElementById('closeBtn');
 
 image.addEventListener('click', () => {
     // image.pause("true");
+    
     popup.style.display = 'block';
     overlay.style.display = 'block';
+    image.style.display = 'none';
 });
 
 closeBtn.addEventListener('click', () => {
     popup.style.display = 'none';
     overlay.style.display = 'none';
+    image.style.display = 'block';
 });
 
  const hidePopup = () => {
