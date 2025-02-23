@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #f0f0f0;
   overflow-x: hidden;
 }
@@ -86,17 +86,7 @@ p {
   width: 15px;
   margin-top: 5px;
 }
-.buy-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  width: max-content;
-  margin: 0 auto;
-}
+
 
 .main-box {
   margin-top: 40px;
@@ -165,8 +155,9 @@ p {
   border: 2px solid #000;
   border-radius: 10px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 45%;
+  transform: translate(45% 40%);
 }
 .magic-btn:hover {
   background-color: #cbe58d;
